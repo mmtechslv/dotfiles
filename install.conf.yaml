@@ -37,7 +37,7 @@
     # Truba Script for OpenVPN
     ~/.auth/truba.auth:
         path: .auth/truba.auth
-    ~/.ovpn:
+    ~/.ovpn/TRUBA-genel.ovpn:
         path: .ovpn/TRUBA-genel.ovpn
 
     
