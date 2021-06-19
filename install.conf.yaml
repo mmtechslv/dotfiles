@@ -1,4 +1,5 @@
-# TODO: Make *.secret auto excluded. Either something wrong with me or globbing in dotfiles.
+# TODO: Make *.secret auto excluded. 
+# Either something wrong with me or globbing in dotfiles.
 
 - defaults:
     link:
