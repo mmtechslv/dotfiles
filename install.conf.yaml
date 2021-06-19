@@ -1,0 +1,45 @@
+# TODO: Make *.secret auto excluded. Either something wrong with me or globbing in dotfiles.
+
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean: ['~']
+
+- link:
+    #Bin
+    ~/bin/truba:
+        path: bin/truba
+        
+    # Shell stuff
+    ~/.bashrc: .bashrc
+    ~/.zshrc: .zshrc
+    
+    #Tmux
+    ~/.tmux.conf: .tmux/.tmux.conf
+    ~/.tmux.conf.local: .tmux.conf.local
+    
+    # Antigen
+    ~/.local/antigen.zsh: antigen/antigen.zsh
+    ~/.antigenrc: .antigenrc
+    
+    # Vim & NeoVim
+    ~/.vimrc: .vimrc
+    ~/.config/nvim/init.vim:
+        path: neovim_init.vim
+        
+    # Git
+    ~/.gitconfig: .gitconfig
+    
+    # Truba Script for OpenVPN
+    ~/.auth/truba.auth:
+        path: .auth/truba.auth
+    ~/.ovpn:
+        path: .ovpn/TRUBA-genel.ovpn
+
+    
+        
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]

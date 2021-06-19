@@ -1,0 +1,9 @@
+.gitsecret/keys/random_seed
+!*.secret
+.gitconfig
+bin/truba
+.auth/truba.auth
+.ovpn/TRUBA-genel.ovpn
+
+# VIM temporary files
+*~
