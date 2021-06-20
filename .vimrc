@@ -30,7 +30,7 @@ Plug 'benmills/vimux'
 Plug 'gilsondev/searchtasks.vim'
 Plug 'honza/vim-snippets'
 Plug 'sirver/ultisnips'
-Plug 'jupyter-vim/jupyter-vim'
+" Plug 'jupyter-vim/jupyter-vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'altercation/vim-colors-solarized'
 Plug 'jpalardy/vim-slime'
@@ -128,12 +128,12 @@ nmap <silent> <C-_> <Plug>(pydocstring)
 " Jupyter-Vim Configuration
 " Always use the same virtualenv for vim, regardless of what Python
 " environment is loaded in the shell from which vim is launched
-let g:vim_virtualenv_path = '/home/mmtechslv/.virtualenvs/vim_virtualenv'
-if exists('g:vim_virtualenv_path')
-    pythonx import os; import vim
-    pythonx activate_this = os.path.join(vim.eval('g:vim_virtualenv_path'), 'bin/activate_this.py')
-    pythonx with open(activate_this) as f: exec(f.read(), {'__file__': activate_this})
-endif
+" let g:vim_virtualenv_path = '/home/mmtechslv/.virtualenvs/vim_virtualenv'
+" if exists('g:vim_virtualenv_path')
+"     pythonx import os; import vim
+"     pythonx activate_this = os.path.join(vim.eval('g:vim_virtualenv_path'), 'bin/activate_this.py')
+"     pythonx with open(activate_this) as f: exec(f.read(), {'__file__': activate_this})
+" endif
 
 """""""""""""""""""""""""""""""""""""
 " Mappings configurationn
