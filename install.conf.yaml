@@ -17,6 +17,7 @@
     # Shell stuff
     ~/.bashrc: .bashrc
     ~/.zshrc: .zshrc
+    ~/.p10k.zsh: .p10k.zsh
     
     #Tmux
     ~/.tmux.conf: .tmux/.tmux.conf
@@ -44,3 +45,4 @@
         
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [chmod +x ./bin/truba]
