@@ -30,7 +30,7 @@ Plug 'godlygeek/tabular'
 Plug 'benmills/vimux'
 Plug 'gilsondev/searchtasks.vim'
 Plug 'honza/vim-snippets'
-Plug 'sirver/ultisnips'
+" Plug 'sirver/ultisnips'
 " Plug 'jupyter-vim/jupyter-vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'altercation/vim-colors-solarized'
@@ -162,9 +162,9 @@ nnoremap <C-H> <C-W><C-H>
 
 nnoremap <leader>t :stop<CR>
 
-" UltiSnip
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
+" " UltiSnip
+" let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" 
 " vim: set ft=vim :
