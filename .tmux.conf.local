@@ -410,3 +410,7 @@ set -g @sidebar-tree-command 'tree -C -L 2'
 #
 # "$@"
 # # /!\ do not remove the previous line
+
+
+# Mouse Active
+set -g mouse on

@@ -11,6 +11,7 @@ call plug#begin()
 Plug 'preservim/NERDTree'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/syntastic'
+Plug 'chiel92/vim-autoformat'
 " Plug 'valloric/youcompleteme'
 Plug 'lervag/vimtex'
 Plug 'tmhedberg/SimpylFold'
