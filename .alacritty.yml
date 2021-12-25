@@ -1,0 +1,9 @@
+shell:
+  program: /usr/bin/zsh
+  args:
+    - -l
+    - -c
+    - "tmux attach || tmux"
+
+key_bindings:
+  - { key: F11, action: ToggleFullscreen }
