@@ -57,7 +57,7 @@
     stdout: false # Print the execution stdout
     stderr: true  # Print the execution stderr
 
-- yum: bat
+- yum: [bat, tree, fd-find, fzf, zoxide]
         
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
