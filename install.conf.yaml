@@ -6,6 +6,12 @@
       create: true
       relink: true
       force: true
+    yum:
+      options: "-q -y"
+      stdout: False
+      stderr: True
+      sudo: True
+
 
 - clean: ['~']
 
@@ -36,7 +42,7 @@
     ~/.gitconfig: .gitconfig
 
     # Alacritty
-    ~/.alacritty: .alacritty
+    ~/.alacritty.yml: .alacritty.yml
     
     # Truba Script for OpenVPN
     ~/.auth/truba.auth:
@@ -44,8 +50,14 @@
     ~/.ovpn/TRUBA-genel.ovpn:
         path: .ovpn/TRUBA-genel.ovpn
 
+- pip:
+    file: requirements.txt
+    binary: /usr/bin/pip3
+    user: true    # Like --user
+    stdout: false # Print the execution stdout
+    stderr: true  # Print the execution stderr
 
-    
+- yum: bat
         
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

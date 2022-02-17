@@ -4,3 +4,13 @@
 [submodule ".tmux"]
 	path = .tmux
 	url = https://github.com/gpakosz/.tmux.git
+[submodule "nerd-fonts"]
+	path = nerd-fonts
+	url = https://github.com/ryanoasis/nerd-fonts.git
+	shallow = true
+[submodule "dotbot-yum"]
+	path = dotbot-yum
+	url = https://gitlab.com/flyingchipmunk/dotbot-yum.git
+[submodule "dotbot-pip"]
+	path = dotbot-pip
+	url = https://github.com/sobolevn/dotbot-pip.git
