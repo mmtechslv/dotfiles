@@ -44,11 +44,6 @@
     # Alacritty
     ~/.alacritty.yml: .alacritty.yml
     
-    # Truba Script for OpenVPN
-    ~/.auth/truba.auth:
-        path: .auth/truba.auth
-    ~/.ovpn/TRUBA-genel.ovpn:
-        path: .ovpn/TRUBA-genel.ovpn
 
 - pip:
     file: requirements.txt
