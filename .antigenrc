@@ -11,6 +11,9 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle jeffreytse/zsh-vi-mode
+antigen bundle https://github.com/casonadams/alacritty-shell.git
+antigen bundle https://github.com/unixorn/autoupdate-antigen.zshplugin.git
+
 
 
 # Select theme

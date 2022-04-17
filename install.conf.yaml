@@ -16,9 +16,6 @@
 - clean: ['~']
 
 - link:
-    #Bin
-    ~/bin/truba:
-        path: bin/truba
         
     # Shell stuff
     ~/.bashrc: .bashrc
@@ -38,8 +35,6 @@
     ~/.config/nvim/init.vim:
         path: neovim_init.vim
         
-    # Git
-    ~/.gitconfig: .gitconfig
 
     # Alacritty
     ~/.alacritty.yml: .alacritty.yml
@@ -51,9 +46,15 @@
     user: true    # Like --user
     stdout: false # Print the execution stdout
     stderr: true  # Print the execution stderr
+ 
+- yum: [bat, tree, fd-find, fzf, zoxide, procps-ng, curl, file, git, libxcrypt-compat]
 
-- yum: [bat, tree, fd-find, fzf, zoxide]
-        
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [chmod +x ./bin/truba]
+    -
+      command: ./install_brew.sh
+      stdin: true
+      stdout: true
+      stderr: true
+      
+- brew: [yq]
