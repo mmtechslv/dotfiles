@@ -91,6 +91,7 @@ export PATH="$HOME/.poetry/bin:$PATH"
 # Alias
 alias pll="pls --details"
 alias lsh="/home/mmtechslv/git/gt/gaintheory-rovalab/launch.sh"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+alias cdrlab="cd /home/mmtechslv/git/gt/gaintheory-rovalab" 
+alias cdpmaf="cd /home/mmtechslv/Documents/IYTE\ Documents/My\ Publications/PhyloMAF"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
