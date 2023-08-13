@@ -11,6 +11,7 @@ then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 PATH="$HOME/.cargo/bin:$PATH"
+PATH="$HOME/.local/bin:$PATH"
 export PATH
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:

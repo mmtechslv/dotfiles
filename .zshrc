@@ -7,7 +7,17 @@ fi
 
 export LANG=C.UTF-8
 
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+PATH="$HOME/.cargo/bin:$PATH"
+PATH="$HOME/.local/bin:$PATH"
+
+export PATH
 ZSH_BASE=$HOME/dotfiles
+
 
 # Load Antigen
 source $ZSH_BASE/antigen/antigen.zsh
@@ -21,15 +31,9 @@ export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator vi_mode)
 export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs virtualenv anaconda pyenv)
 export POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 export POWERLEVEL9K_CONTEXT_TEMPLATE="%n"
+export POWERLEVEL9K_VIRTUALENV_SHOW_WITH_POETRY=true
+export POWERLEVEL9K_POETRY_VENV_PROJECT_ONLY=true
 
-
-# User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
-then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-fi
-PATH="$HOME/.cargo/bin:$PATH"
-export PATH
 
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
@@ -86,8 +90,6 @@ PERL_MM_OPT="INSTALL_BASE=/home/mmtechslv/perl5"; export PERL_MM_OPT;
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-export PATH="$HOME/.poetry/bin:$PATH"
-
 # Alias
 alias pll="pls --details"
 alias lsh="/home/mmtechslv/git/gt/gaintheory-rovalab/launch.sh"
@@ -95,3 +97,8 @@ alias cdrlab="cd /home/mmtechslv/git/gt/gaintheory-rovalab"
 alias cdpmaf="cd /home/mmtechslv/Documents/IYTE\ Documents/My\ Publications/PhyloMAF"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
+PATH="$HOME/.local/share/JetBrains/Toolbox/scripts${PATH:+:${PATH}}"; export PATH
+

@@ -42,6 +42,7 @@ Plug 'quramy/tsuquyomi'
 Plug 'leafgarland/typescript-vim'
 Plug 'rrethy/vim-illuminate'
 Plug 'ambv/black'
+Plug 'mg979/vim-visual-multi'
 call plug#end()
 
 if &cp | set nocp | endif
